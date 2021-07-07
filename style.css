@@ -1,0 +1,103 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1.2rem;
+}
+.heading {
+  font-size: 3.6rem;
+  font-weight: 700;
+  font-family: "PT Serif", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+
+  justify-self: center;
+  flex-grow: 1;
+}
+
+.tagline {
+}
+.tagline__heading {
+  font-family: "Poppins", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-left: 1.2rem;
+}
+.tagline__content {
+  font-family: "Poppins", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+  font-size: 1.4rem;
+  margin-left: 1.2rem;
+}
+.gallery {
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  margin: 6rem auto;
+  max-width: 20rem;
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+.gallery__images {
+  max-width: 14rem;
+  max-height: 22rem;
+}
+.gallery__person {
+  position: relative;
+  min-width: 20rem;
+}
+.gallery__name {
+}
+.gallery__name > h2 {
+  font-family: "Poppins", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.gallery__role {
+  font-family: "PT Serif", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  line-height: 13.25;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: absolute;
+  top: 0;
+  right: -3rem;
+}
+.creator {
+  font-family: "Montserrat", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #a9a9a9;
+}
+.creator__name {
+  font-weight: 700;
+  text-decoration: underline;
+}
+@media screen and (max-width: 1023px) {
+  .gallery figure:nth-of-type(2n + 1) {
+    transform: translateY(-5rem);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    margin: 5rem auto;
+    max-width: 120rem;
+  }
+  .gallery {
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  }
+  .gallery figure:nth-of-type(3n + 2) {
+    transform: translateY(5rem);
+  }
+  .gallery__role {
+    font-size: 1.2rem;
+    right: -5rem;
+  }
+}
