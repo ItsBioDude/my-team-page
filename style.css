@@ -47,7 +47,7 @@ body {
 }
 .gallery__person {
   position: relative;
-  min-width: 20rem;
+  /* min-width: 20rem; */
 }
 .gallery__name {
 }
@@ -65,7 +65,8 @@ body {
   text-orientation: mixed;
   position: absolute;
   top: 0;
-  right: -3rem;
+  right: -10rem;
+  /* right: -3rem; */
 }
 .creator {
   font-family: "Montserrat", "Gill Sans", "Gill Sans MT", Calibri,
@@ -99,5 +100,9 @@ body {
   .gallery__role {
     font-size: 1.2rem;
     right: -5rem;
+  }
+  .gallery__person {
+    /* position: relative; */
+    min-width: 20rem;
   }
 }
